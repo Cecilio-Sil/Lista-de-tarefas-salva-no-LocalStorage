@@ -10,3 +10,5 @@ A aplicação permite criar tarefas e gerenciá-las conforme as opções dispon�
 * **Ativas** -> Exibe exclusivamente as tarefas que ainda não foram concluídas.
 * **Completas** -> Exibe as tarefas que já foram finalizadas.
 * **Limpar completadas** -> Remove todas as tarefas concluídas da lista.
+
+# Layout web
