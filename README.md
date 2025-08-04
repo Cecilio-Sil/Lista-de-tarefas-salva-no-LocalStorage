@@ -30,4 +30,4 @@ A aplicação permite criar tarefas e gerenciá-las conforme as opções dispon�
 
 # Autor
 **Cecílio Neto M. Silva**<br>
-[Clique aqui](https://www.linkedin.com/in/cec%C3%ADlioneto5527a924a/) e visite o meu LinkedIn.
+[Clique aqui](https://www.linkedin.com/in/cec%C3%ADlioneto5527a924a/){:target="_blank"} e visite o meu LinkedIn.
