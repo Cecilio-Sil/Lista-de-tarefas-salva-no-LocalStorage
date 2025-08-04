@@ -12,3 +12,22 @@ A aplicação permite criar tarefas e gerenciá-las conforme as opções dispon�
 * **Limpar completadas** -> Remove todas as tarefas concluídas da lista.
 
 # Layout web
+![web 1](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/1.PNG)
+
+![web 2](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/2.PNG)
+
+![web 3](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/3.PNG)
+
+![web 4](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/4.PNG)
+
+![web 5](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/5.PNG)
+
+# Tecnologias Utilizadas
+- HTML.
+- CSS.
+- TypeScript.
+- ReactJS.
+
+# Autor
+**Cecílio Neto M. Silva**
+[Clik aqui](https://www.linkedin.com/in/cec%C3%ADlioneto5527a924a/) e visite o meu LinkedIn.
