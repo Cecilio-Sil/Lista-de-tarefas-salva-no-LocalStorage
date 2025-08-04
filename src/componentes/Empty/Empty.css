@@ -1,0 +1,16 @@
+.content-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+
+    height: 400px;
+    color: #9495a5;
+    font-size: 18px;
+}
+
+.content-empty img{
+    width: 200px;
+    height: auto;
+}

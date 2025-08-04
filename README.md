@@ -1,33 +1,69 @@
-# Lista-de-tarefas-salva-no-LocalStorage
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/LICENSE)
+# React + TypeScript + Vite
 
-# Sobre o projeto
-A Lista de Tarefas é uma aplicação _Front End_ desenvolvida ao longo do curso [**ReactJS e NextJS: Do Zero ao Profissional**](https://www.udemy.com/course/reactjs-do-basico-ao-avancado-aprenda-a-criar-apps-reais/?couponCode=KEEPLEARNINGBR).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-A aplicação permite criar tarefas e gerenciá-las conforme as opções disponíveis, que são: 
-* **Itens restantes** -> Exibe apenas as tarefas ativas.
-* **Todas** -> Exibe todas as tarefas, independentemente do status.
-* **Ativas** -> Exibe exclusivamente as tarefas que ainda não foram concluídas.
-* **Completas** -> Exibe as tarefas que já foram finalizadas.
-* **Limpar completadas** -> Remove todas as tarefas concluídas da lista.
+Currently, two official plugins are available:
 
-# Layout web
-![web 1](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/1.PNG)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-![web 2](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/2.PNG)
+## Expanding the ESLint configuration
 
-![web 3](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/3.PNG)
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-![web 4](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/4.PNG)
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-![web 5](https://github.com/Cecilio-Sil/Lista-de-tarefas-salva-no-LocalStorage/blob/main/Sssets/5.PNG)
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
 
-# Tecnologias Utilizadas
-- HTML.
-- CSS.
-- TypeScript.
-- ReactJS.
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-# Autor
-**Cecílio Neto M. Silva**<br>
-<a href="https://www.linkedin.com/in/cec%C3%ADlioneto5527a924a/" target="_blank" rel="noopener"> Clique aqui </a> e visite o meu LinkedIn.
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
