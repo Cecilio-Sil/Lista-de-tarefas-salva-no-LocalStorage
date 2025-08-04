@@ -29,5 +29,5 @@ A aplicação permite criar tarefas e gerenciá-las conforme as opções dispon�
 - ReactJS.
 
 # Autor
-**Cecílio Neto M. Silva**
-[Clik aqui](https://www.linkedin.com/in/cec%C3%ADlioneto5527a924a/) e visite o meu LinkedIn.
+**Cecílio Neto M. Silva**//
+[Clique aqui](https://www.linkedin.com/in/cec%C3%ADlioneto5527a924a/) e visite o meu LinkedIn.
